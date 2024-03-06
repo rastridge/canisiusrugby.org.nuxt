@@ -1,0 +1,9 @@
+<template>
+	<div>
+		<iframe
+			src="https://canisiusrugby.org/old-rosters/home.html"
+			width="100%"
+			height="1000px"
+		></iframe>
+	</div>
+</template>

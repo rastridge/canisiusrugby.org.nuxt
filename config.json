@@ -1,0 +1,6 @@
+﻿{
+	"API": "https://api.canisiusrugby.org/api",
+	"SITE_CONTENT_PATH": "/home/rastridge/canisiusrugby.org/public",
+	"SITE_IMAGE_PATH": "/home/rastridge/canisiusrugby.org/public/imgs",
+	"SITE_URL": "https://canisiusrugby.org"
+}
