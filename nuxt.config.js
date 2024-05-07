@@ -71,7 +71,7 @@ export default {
 		[
 			"@nuxtjs/google-analytics",
 			{
-				id: "UA-77520982-1",
+				id: "G-Z3NSP2KEHY",
 			},
 		],
 	],
@@ -111,7 +111,7 @@ export default {
 	 ** See https://axios.nuxtjs.org/options
 	 */
 	axios: {
-		baseURL: "https://api.canisiusrugby.org.net/api",
+		baseURL: "https://api.canisiusrugby.org/api",
 		https: true,
 	},
 	/*
