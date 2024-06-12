@@ -1,6 +1,6 @@
-# code - buffalorugby.org.nuxt
+# code - canisiusrugby.org.nuxt2
 
-> Converted BRC Site from PHP/JQ to JS/NUXT
+> Converted Canisius Site from PHP/JQ to JS/NUXT
 
 ## Build Setup
 
@@ -31,12 +31,13 @@ https://panel.dreamhost.com/
 
 Setup
 
-DANGER - all images are stored in 'public' - DO NOT OVERWRITE
+DANGER - all images are stored in '/home/rastridge/canisiusrugby.org/public' - DO NOT OVERWRITE
 
-- Upload js server '~/Code/brc.org.nuxt3/nuxt3-brc-media-api' to dreamhost
+- Upload js server '~/Code/canisiusrugby.org.nuxt2/canisiusrugby.org.api' to dreamhost
 
 ```
-rsync -av --delete --exclude "ecosystem.config.js" --exclude "app.js" --exclude "/public" --exclude "logs" --exclude "/node_modules" --exclude ".git" --exclude ".gitignore" ~/Code/canisiusrugby.org.nuxt2/canisiusrugby.org.api/ rastridge@buffalorugby.org:/home/rastridge/api.canisiusrugby.org/
+rsync -av --delete --exclude ".git" --exclude ".DS_Store" --exclude ".eslintrc.js" --exclude ".editorconfig" --exclude "/node_modules" --exclude "/public" --exclude "/imgs" ~/Code/canisiusrugby.org.nuxt2/canisiusrugby.org.api/ rastridge@vps30249.dreamhostps.com:/home/rastridge/api.canisiusrugby.org/
+
 ```
 
 - enable Proxy server on api.canisiusrugby.org
