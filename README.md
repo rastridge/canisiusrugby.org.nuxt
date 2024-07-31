@@ -1,5 +1,7 @@
 # code - canisiusrugby.org.nuxt2
 
+- Built using Nuxt @ v2.17.3
+
 ## Front end Build Setup
 
 - install dependencies
@@ -26,40 +28,19 @@ npm run dev
 npm run generate
 ```
 
-## API to serve requests
-
-- Dreamhost - api.canisiusrugby.org
+- Upload to site (dry run first)
 
 ```
-https://panel.dreamhost.com/
-```
-
-# Setup
-
-DANGER - all images are stored in '/home/rastridge/canisiusrugby.org/public' - DO NOT OVERWRITE
-
-- Upload js server '~/Code/canisiusrugby.org.nuxt2/canisiusrugby.org.api' to dreamhost
-
-```
-rsync -av --delete --exclude ".git" --exclude ".DS_Store" --exclude ".eslintrc.js" --exclude ".editorconfig" --exclude "/node_modules" --exclude "/public" --exclude "/imgs" ~/Code/canisiusrugby.org.nuxt2/canisiusrugby.org.api/ rastridge@vps30249.dreamhostps.com:/home/rastridge/api.canisiusrugby.org/
+rsync -av --dry-run --delete --exclude ".git" --exclude ".gitignore" --exclude ".nojekyll"  ~/code/canisiusrugby.org.nuxt2/canisiusrugby.org.nuxt2/dist/  rastridge@vps30249.dreamhostps.com:/home/rastridge/canisiusrugby.org/public/
 
 ```
 
-- enable Proxy server on api.canisiusrugby.org
+- Inspect the site
 
 ```
-alias shell='ssh rastridge@vps30249.dreamhostps.com'
+ssh rastridge@vps30249.dreamhostps.com
+cd canisiusrugby.org/public
 ```
-
-Maintain server with pm2
-
-- Start server
-
-```
-pm2 ecosystem.config.js
-```
-
-- cronjob to restart servers using 'pm2 resurrect'
 
 # Supporting Services
 
