@@ -1,27 +1,32 @@
 # code - canisiusrugby.org.nuxt2
 
-> Converted Canisius Site from PHP/JQ to JS/NUXT
+## Front end Build Setup
 
-## Build Setup
+- install dependencies
 
-```bash
-# install dependencies
-$ npm install
-
-# must use node v14
-$ nvm use v14.19.3
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production
-
-$ npm run generate
+```
+npm install
 ```
 
-#
+- must use node v14
 
-## API to support requests
+```
+nvm use v14.19.3
+```
+
+- start with hot reload at localhost:3000
+
+```
+npm run dev
+```
+
+- build for production
+
+```
+npm run generate
+```
+
+## API to serve requests
 
 - Dreamhost - api.canisiusrugby.org
 
@@ -29,7 +34,7 @@ $ npm run generate
 https://panel.dreamhost.com/
 ```
 
-Setup
+# Setup
 
 DANGER - all images are stored in '/home/rastridge/canisiusrugby.org/public' - DO NOT OVERWRITE
 
@@ -55,3 +60,24 @@ pm2 ecosystem.config.js
 ```
 
 - cronjob to restart servers using 'pm2 resurrect'
+
+# Supporting Services
+
+A number of outside services are used to implement apps
+
+## Sending Emails
+
+ElasticEmail
+setup and Usage
+
+```
+https://app.elasticemail.com/login
+```
+
+## Sending Text Messages
+
+- Twilio - text messaging
+
+```
+https://www.twilio.com/login
+```
