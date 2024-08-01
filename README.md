@@ -31,7 +31,10 @@ npm run generate
 - Upload to site (dry run first)
 
 ```
-rrsync -av --dry-run --delete --exclude ".git" --exclude ".gitignore" --exclude ".nojekyll" --exclude "xoda" --exclude "_img" --exclude "imgs" --exclude "templabels" --exclude "thumbs" --exclude "xoda" ~/code/canisiusrugby.org.nuxt2/canisiusrugby.org.nuxt2/dist/  rastridge@vps30249.dreamhostps.com:/home/rastridge/canisiusrugby.org/public/
+rsync -av --dry-run --delete --exclude ".git" --exclude ".gitignore" --exclude ".nojekyll" --exclude "xoda" --exclude "_img" --exclude "imgs" --exclude "templabels" --exclude "thumbs" --exclude "xoda" ~/code/canisiusrugby.org.nuxt2/canisiusrugby.org.nuxt2/dist/  rastridge@vps30249.dreamhostps.com:/home/rastridge/canisiusrugby.org/public/
+
+rsync -av --dry-run --delete --exclude ".git" --exclude ".gitignore" --exclude ".nojekyll" --exclude "xoda" --exclude "_img" --exclude "imgs" --exclude "templabels" --exclude "thumbs" --exclude "xoda" ~/code/canisiusrugby.org.nuxt2/canisiusrugby.org.nuxt2/dist/  rastridge@vps30249.dreamhostps.com:/home/rastridge/my-test-site.net/public/
+
 ```
 
 - Inspect the site
